@@ -120,17 +120,21 @@ class Template
                 return $default;
             }
 
-            $data = $data[$key];
+            $val = $data[$key];
         } elseif (is_object($data)) {
             if (!isset($data->{$key})) {
                 return $default;
             }
 
-            $data = $data->{$key};
+            $val = $data->{$key};
         } else {
             return $default;
         }
 
-        return $data;
+        if ($val === false) {
+            return (int) $val;
+        }
+
+        return $val;
     }
 }

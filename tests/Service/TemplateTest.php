@@ -6,7 +6,7 @@
  * Time: 17:21
  */
 
-namespace Tests;
+namespace Tests\Service;
 
 use PHPUnit\Framework\TestCase;
 use Templater\Service\Template;
@@ -20,9 +20,5 @@ class TemplateTest extends TestCase
             'my_var' => 'test7897897',
             'bool_var' => false
         ]);
-
-
-
-        $this->assertEquals(1, 1);
     }
 }
