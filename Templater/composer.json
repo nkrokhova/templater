@@ -1,0 +1,8 @@
+{
+    "name": "nkrokhova/templater",
+    "description": "templater",
+    "license": "MIT",
+    "require": {
+        "php": "~7.3"
+    }
+}
